@@ -44,7 +44,7 @@ export class Createlist1 {
   }
 }
 
-export function Createtask1(date, task, description, readradiovalue1, status) {
+export const Createtask1 = (date, task, description, readradiovalue1, status) => {
   this.date = date;
   this.task = task;
   this.description = description;
@@ -60,7 +60,7 @@ export const createlist = (value, e = false) => {
   if (e) reload(e);
 };
 
-export function edittaskform(dateedit, taskedit, descriptionedit, readradiovalue2) {
+export const edittaskform =(dateedit, taskedit, descriptionedit, readradiovalue2) => {
   const listtasks = localstorage1();
 
   const selecteditem = localStorage.getItem('selectedlist');
