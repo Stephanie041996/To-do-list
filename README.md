@@ -1,5 +1,5 @@
 # To-do-list
-
+![screenshot](./screenshot.png)
 
 A project to do list Application whichdynamically renders projects in JavaScript using the Webpack. Projects and tasks can be created and stored in Web browser's local storage.
 
