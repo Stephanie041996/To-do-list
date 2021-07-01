@@ -12,7 +12,13 @@ export class Createlist1 {
       this.todos = [];
     }
   }
-
+  export function Createtask1(date, task, description, readradiovalue1, status) {
+    this.date = date;
+    this.task = task;
+    this.description = description;
+    this.priority = readradiovalue1;
+    this.status = status;
+  }
 
 
 
