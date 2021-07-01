@@ -4,7 +4,30 @@ const editform = document.querySelector('#edit-form-display');
 const listname = document.querySelector('#defaultlist');
 const formdisplay = document.querySelector('#form-display');
 
-
+export const localstorage1 = () => {
+    let liststasks = [];
+    if (localStorage.getItem('liststore')) {
+      liststasks = JSON.parse(localStorage.liststore);
+    }
+    return liststasks;
+  };
+  
+  function reload(e) {
+    e.preventDefault();
+    window.location.reload();
+  }
+  
+  export const deletetasklogic = (i, remove, listtasks) => {
+    listtasks[i].todos.splice(remove, 1);
+  };
+  
+  export const checkboxfalse = (listtasks, i, remove) => {
+    listtasks[i].todos[remove].status = false;
+  };
+  
+  export const checkboxtrue = (listtasks, i, remove) => {
+    listtasks[i].todos[remove].status = true;
+  };
 
 export class Createlist1 {
     constructor(list) {
