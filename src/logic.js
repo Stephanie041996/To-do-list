@@ -3,6 +3,15 @@ const listform = document.querySelector('#list-display');
 const editform = document.querySelector('#edit-form-display');
 const listname = document.querySelector('#defaultlist');
 const formdisplay = document.querySelector('#form-display');
+const list = document.getElementById('list');
+const readRadios1 = document.querySelectorAll('.radiobtn');
+const task = document.querySelector('#task');
+const description = document.querySelector('#description');
+const date = document.querySelector('#date');
+export const readRadios1edit = document.querySelectorAll('.radiobtnedit');
+export const taskedit = document.getElementById('taskedit');
+export const descriptionedit = document.getElementById('descriptionedit');
+export const dateedit = document.getElementById('dateedit')
 
 export const localstorage1 = () => {
     let liststasks = [];
