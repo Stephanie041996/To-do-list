@@ -50,7 +50,7 @@ export const Createtask1 = (date, task, description, readradiovalue1, status) =>
   this.description = description;
   this.priority = readradiovalue1;
   this.status = status;
-}
+};
 
 export const createlist = (value, e = false) => {
   const liststasks = localstorage1();
@@ -60,7 +60,7 @@ export const createlist = (value, e = false) => {
   if (e) reload(e);
 };
 
-export const edittaskform =(dateedit, taskedit, descriptionedit, readradiovalue2) => {
+export const edittaskform = (dateedit, taskedit, descriptionedit, readradiovalue2) => {
   const listtasks = localstorage1();
 
   const selecteditem = localStorage.getItem('selectedlist');
@@ -76,8 +76,7 @@ export const edittaskform =(dateedit, taskedit, descriptionedit, readradiovalue2
       break;
     }
   }
-  // dom1.dom();
-}
+};
 
 export const createtask = (date, task, description, readradiovalue1) => {
   const listtasks = localstorage1();
