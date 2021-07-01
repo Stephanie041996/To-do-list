@@ -60,3 +60,29 @@ export function edittaskform(dateedit, taskedit, descriptionedit, readradiovalue
       }
     }
   };
+
+  export const logic = () => {
+    const liststasks = [];
+    if (!localStorage.getItem('liststore')) {
+      const listdefault = new Createlist1(listname.textContent);
+      liststasks.push(listdefault);
+      localStorage.setItem('liststore', JSON.stringify(liststasks));
+    }
+  
+    listform.addEventListener('submit', (e) => { createlist(list.value, e); });
+  
+    formdisplay.addEventListener('submit', (e) => {
+      let readradiovalue2;
+  
+      if (localStorage.getItem('selectedlist')) {
+        for (let i = 0; i < 3; i += 1) {
+          if (readRadios1[i].checked === true) {
+            readradiovalue2 = readRadios1[i].value;
+            break;
+          }
+        }
+      }
+      createtask(date.value, task.value, description.value, readradiovalue2);
+      reload(e);
+    });
+  
