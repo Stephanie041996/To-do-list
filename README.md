@@ -28,7 +28,12 @@ To set up a local copy of the project
   or
 
 - Go to the dist folder and open index.html
+- 
+## Testing
 
+To check if the tests are working properly
+
+Type `npm run test`
 
 ## Author
 
