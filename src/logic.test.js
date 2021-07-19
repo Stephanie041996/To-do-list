@@ -2,10 +2,10 @@
  * @jest-environment jsdom
  */
 
- import {
+import {
   localstorage1, Createlist1, Createtask1, deletetasklogic,
   checkboxfalse, checkboxtrue, createtask, createlist, edittaskform,
-} from './logic';
+} from './logic.js';
 
 describe('Creating tasks and lists', () => {
   test('List Creation', () => {
