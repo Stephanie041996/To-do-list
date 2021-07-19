@@ -1,4 +1,8 @@
- import {
+/**
+ * @jest-environment jsdom
+ */
+
+import {
     localstorage1, deletetasklogic,
     checkboxfalse, checkboxtrue, createtask, Createlist1, Createtask1, createlist, edittaskform,
   } from './logic.js';
